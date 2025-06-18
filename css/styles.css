@@ -1,0 +1,170 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #1c1c1c;
+    color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #7a0e17;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffd1dc;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #ffd1dc;
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.03);
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 10px 5px 0 0;
+    background-color: #7a0e17;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #a31623;
+  }
+
+  .blink-text {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .blink-text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.5), transparent);
+    animation: blink 2s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    header, main, footer {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    nav a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    main {
+      max-width: 900px;
+      margin: auto;
+    }
+  }
+  
+  .bio-block {
+    padding: 30px;
+    background-color: #1c1c1c;
+  }
+  
+  .bio-card {
+    display: flex;
+    padding: 10px 30px;
+    background-color: #151719;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  
+  .bio-card img {
+    max-width: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .bio-text {
+    padding: 20px;
+    color: #f0f0f0;
+    flex: 1;
+  }
+  
+  .bio-text h2 {
+    margin-top: 0;
+    color: #ff5b5b;
+  }
+  
+  .bio-text ul {
+    padding-left: 20px;
+    list-style-type: square;
+    color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .bio-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bio-text {
+      text-align: center;
+    }
+  
+    .bio-text ul {
+      padding-left: 0;
+    }
+  }
+  
