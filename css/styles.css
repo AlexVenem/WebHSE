@@ -101,6 +101,10 @@ body {
       padding: 10px;
       text-align: center;
     }
+
+    ul{
+      text-align: left;
+    }
   
     nav a {
       display: block;
@@ -108,12 +112,16 @@ body {
     }
   }
   
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     main {
       max-width: 900px;
+      padding: 30px;
       margin: auto;
     }
-  }
+    .bio-card {
+        padding: 30px;
+    }
+}
   
   .bio-block {
     padding: 30px;
@@ -152,19 +160,9 @@ body {
     list-style-type: square;
     color: #ddd;
   }
-  
-  @media (max-width: 768px) {
-    .bio-card {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .bio-text {
-      text-align: center;
-    }
-  
-    .bio-text ul {
-      padding-left: 0;
-    }
-  }
-  
+  #extra-info {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
